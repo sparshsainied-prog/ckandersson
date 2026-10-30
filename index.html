@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>C. K. Andersson · The Offline Series</title>
+<meta name="description" content="A homepage idea made by Sparsh Saini for C. K. Andersson. Not her official site.">
+<meta property="og:title" content="C. K. Andersson · The Offline Series (a homepage idea)">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for C. K. Andersson. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/ckandersson/img/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/plate.jpg">
+<style>
+:root{--bark:#1c120a;--earth:#2b1b0e;--amber:#e9b25a;--gold:#f6dd9a;--parch:#f3e6cc;--ink:#ead9b8;--soft:#bfa57c;--rib:#2f4f86;--plum:#b98ad6}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bark)}
+body{background:var(--bark);color:var(--ink);font:500 1.2rem/1.6 "Cormorant Garamond",Georgia,serif;-webkit-font-smoothing:antialiased}
+a{color:var(--gold)}
+.strip{background:#0f0905;color:var(--soft);font-size:.95rem;text-align:center;padding:.45rem 16px;position:relative;z-index:5}
+.cz{font-family:"Cinzel Decorative",Georgia,serif;font-weight:700;letter-spacing:.02em}
+/* ribbon nav: the special edition's blue ribbon bookmark */
+.ribbon{position:fixed;top:0;right:18px;z-index:20;width:58px;background:var(--rib);padding:2.2rem 0 1.6rem;display:flex;flex-direction:column;align-items:center;gap:1.1rem;clip-path:polygon(0 0,100% 0,100% 100%,50% calc(100% - 16px),0 100%);box-shadow:inset 0 0 0 2px rgba(246,221,154,.25)}
+.ribbon a{writing-mode:vertical-rl;text-decoration:none;color:var(--parch);font-family:"Cinzel Decorative",serif;font-size:.78rem;letter-spacing:.06em}
+.ribbon a:hover{color:var(--gold)}
+/* hero */
+.hero{position:relative;height:340vh;background:radial-gradient(120% 80% at 60% 40%,#4a2c10 0%,var(--bark) 70%)}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.book{position:absolute;left:0;top:0;width:var(--bw);aspect-ratio:1651/2551;transform-origin:57.8% 40.6%;will-change:transform;box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.book img.plate{position:absolute;inset:0;width:100%;height:100%;display:block}
+.moth{position:absolute;width:5.6%;aspect-ratio:1;margin:-2.8% 0 0 -2.8%;will-change:transform;pointer-events:none}
+.moth img{width:100%;height:100%;display:block}
+.copy{position:absolute;z-index:3;left:16px;right:16px;bottom:4.5vh;opacity:0;will-change:opacity,transform}
+.copy h1{font-family:"Cinzel Decorative",serif;font-weight:700;color:var(--gold);font-size:clamp(1.5rem,6.4vw,2.6rem);line-height:1.15;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.copy p{margin:.5rem 0 1rem;color:var(--parch);text-shadow:0 1px 8px #000}
+.btns{display:flex;flex-wrap:wrap;gap:.7rem}
+.btn{font-variant-ligatures:none;display:inline-block;font-family:"Cinzel Decorative",serif;font-weight:700;font-size:.92rem;text-decoration:none;color:#2a1607;background:linear-gradient(#f8e3a6,#d9a650);padding:.7rem 1.2rem;border:1px solid #8a5a1e;box-shadow:inset 0 0 0 2px rgba(255,248,220,.5),0 3px 0 #5b3a12}
+.btn.ghost{background:rgba(28,18,10,.7);color:var(--gold);border-color:var(--amber);box-shadow:inset 0 0 0 1px rgba(246,221,154,.3)}
+@media (max-width:899px){.ribbon{right:8px;width:38px;padding:1.4rem 0 1.2rem}.ribbon a{font-size:.66rem}.stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(transparent,rgba(20,12,6,.92) 55%);opacity:var(--sc,0);pointer-events:none;z-index:2}}
+@media (min-width:900px){.copy{left:7vw;right:auto;width:36vw;top:50%;bottom:auto;transform:translateY(-50%)}.copy h1{font-size:clamp(2rem,3.2vw,3.2rem)}}
+/* calm sections */
+section.s{max-width:1080px;margin:0 auto;padding:5.5rem 16px}
+h2{font-family:"Cinzel Decorative",serif;font-weight:700;color:var(--gold);font-size:clamp(1.7rem,5vw,2.6rem);line-height:1.15;margin-bottom:1.6rem}
+h3{font-family:"Cinzel Decorative",serif;font-weight:700;color:var(--parch);font-size:1.35rem;margin-bottom:.3rem}
+.sub{color:var(--soft);font-style:italic;margin-bottom:.8rem}
+.vol{display:grid;grid-template-columns:minmax(0,1fr);gap:1.6rem;margin-bottom:4rem;align-items:start}
+.vol img{width:min(260px,70%);display:block;box-shadow:0 18px 40px rgba(0,0,0,.6)}
+@media (min-width:760px){.vol{grid-template-columns:260px 1fr;gap:3rem}.vol img{width:100%}.vol.r{grid-template-columns:1fr 260px}.vol.r img{order:2}}
+.vol p{margin-bottom:.9rem;max-width:62ch}
+.spell h2,.spell h3{color:#e7cdf3}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--amber),transparent);margin:0 auto;max-width:900px;opacity:.5}
+.about{display:grid;gap:2rem}
+@media (min-width:860px){.about{grid-template-columns:1.3fr 1fr;gap:4rem}}
+.about p{margin-bottom:1rem;max-width:60ch}
+.pets{border-left:2px solid var(--amber);padding-left:1.2rem;color:var(--parch)}
+.pets li{list-style:none;margin:.4rem 0}
+.pets b{font-family:"Cinzel Decorative",serif;color:var(--gold);font-size:1.05rem}
+.table{background:var(--earth);border:1px solid rgba(233,178,90,.35);padding:2rem 1.4rem;position:relative}
+.table .big{font-family:"Cinzel Decorative",serif;font-weight:700;color:var(--gold);font-size:clamp(2.6rem,10vw,4.6rem);line-height:1}
+.later{margin-top:2rem}
+.later li{list-style:none;padding:.65rem 0;border-top:1px solid rgba(233,178,90,.2);display:flex;flex-wrap:wrap;gap:.2rem 1rem}
+.later li span:first-child{color:var(--gold);min-width:9rem}
+footer{text-align:center;color:var(--soft);font-size:.95rem;padding:3rem 16px 4rem;border-top:1px solid rgba(233,178,90,.2)}
+@media (prefers-reduced-motion:reduce){.hero{height:auto}.stage{position:relative;height:auto;min-height:100vh;padding:2rem 16px 2rem}.book{position:relative;left:auto;top:auto;margin:0 auto 1.5rem;transform:none!important}.copy{position:relative;opacity:1!important;transform:none!important;left:auto;right:auto;bottom:auto;top:auto;width:auto;max-width:640px;margin:0 auto}.stage::after{display:none}}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for C. K. Andersson. Not her official site.</div>
+<nav class="ribbon" aria-label="Sections"><a href="#books">Books</a><a href="#about">About</a><a href="#meet">Meet me</a></nav>
+
+<header class="hero" id="top">
+  <div class="stage">
+    <div class="book" id="book">
+      <img class="plate" src="img/plate.jpg" alt="Shadow Dance cover: Saga in plate armour and glasses in a golden forest, a glowing moth at her fingertip, a mage with a white bird and an elf with a sword behind her" width="1651" height="2551">
+      <div class="moth" data-x="57.8" data-y="40.6" data-d="0"><img src="img/m3.webp" alt=""></div>
+      <div class="moth" data-x="65.1" data-y="37.2" data-d="1"><img src="img/m2.webp" alt=""></div>
+      <div class="moth" data-x="42.4" data-y="23.9" data-d="2"><img src="img/m1.webp" alt=""></div>
+    </div>
+    <div class="copy" id="copy">
+      <h1>What would you do if fiction became reality?</h1>
+      <p>The Offline Series. Dark portal fantasy for anyone who ever wished their MMORPG was real, then had to survive it.</p>
+      <div class="btns"><a class="btn" href="https://ckandersson.com/products/shadow-dance-signed-paperback">Signed copies</a><a class="btn ghost" href="https://books2read.com/shadowdance-tos1">Ebook and audio</a></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="s" id="books">
+  <h2>The Offline Series</h2>
+  <div class="vol">
+    <img src="img/ebook_shadow_dance.jpg" alt="Shadow Dance cover" loading="lazy" width="700" height="1082">
+    <div>
+      <h3>Shadow Dance</h3>
+      <div class="sub">Book one. Dark portal fantasy, slow burn, fade to black.</div>
+      <p>Saga escapes her mundane life of modern stresses and anxieties, a failed relationship and a monotonous job by immersing herself in Reign Online, an MMORPG set in a fantastical world filled with magic and mystery.</p>
+      <p>When dark whispers begin to invade her mind, she is pulled through a rift into a world eerily reminiscent of the game she plays. Grand Prior Roseheart, the leader of a paladin order, is convinced she is the key to defeating the dark magic that blights the land. But is that all he sees in her?</p>
+      <div class="btns"><a class="btn" href="https://ckandersson.com/products/shadow-dance-signed-paperback">Signed paperback</a><a class="btn ghost" href="https://ckandersson.com/products/shadow-dance-special-edition">Special edition</a><a class="btn ghost" href="https://books2read.com/shadowdance-tos1">Ebook and audio</a></div>
+    </div>
+  </div>
+  <div class="vol r spell">
+    <img src="img/ebook_spellbound.jpg" alt="Spellbound cover" loading="lazy" width="700" height="1082">
+    <div>
+      <h3>Spellbound</h3>
+      <div class="sub">Book two. Dark fantasy dipping into grimdark, with a happy ending.</div>
+      <p>Picks up where Shadow Dance left off. The dark whispers get louder, and the duology ends with ancient gods of chaos and darkness trying to pull Theadrath apart.</p>
+      <div class="btns"><a class="btn" href="https://ckandersson.com/products/spellbound-signed-paperback">Signed paperback</a><a class="btn ghost" href="https://books2read.com/spellbound-tos2">Ebook and audio</a></div>
+    </div>
+  </div>
+  <div class="vol">
+    <img src="img/blood_ritual.jpg" alt="Blood Ritual cover" loading="lazy" width="500" height="773" style="width:min(200px,55%)">
+    <div>
+      <h3>Blood Ritual</h3>
+      <div class="sub">The free prequel novella.</div>
+      <p>He would destroy the world, and anyone in it, for her. Lysander Duleon, a half-elf-turned-vampire, is searching for a way to subdue an ancient deity. It comes free when you join the newsletter, and the audiobook is free too.</p>
+      <div class="btns"><a class="btn ghost" href="https://ckandersson.com/pages/newsletter">Get it free</a></div>
+    </div>
+  </div>
+  <p class="sub" style="font-size:1.25rem">Next up: <span style="color:var(--gold)">Accidentally Fell in Love with a Raid Boss</span>. Pre-orders come with a swag bag.</p>
+</section>
+<div class="rule"></div>
+<section class="s" id="about">
+  <h2>Hi, I'm C. K.</h2>
+  <div class="about">
+    <div>
+      <p>I write character-driven fantasy for adults, inspired by my favourite computer games and D&amp;D. Sprinkles of magic, swoon-worthy romantic subplots, and realistic, flawed characters. Mental health matters in my books, and so do strong women who grow.</p>
+      <p>I was a refugee child, raised in Östergötland (so yes, I speak proper östgötska). I've lived in the UK with my British partner since 2017. Before this I worked with immigration and unaccompanied children, did localisation testing on video games, streamed on Twitch and walked dogs for a living.</p>
+      <p>I've known I wanted to be an author since I was seven. So I decided to chase it.</p>
+    </div>
+    <ul class="pets">
+      <li><b>Mango</b>, rescue dog</li>
+      <li><b>Merlin</b> and <b>Uther</b>, rescue cats</li>
+      <li>Warhammer minis, painted with my partner</li>
+      <li>Baldur's Gate 3, on permanent rotation</li>
+      <li>Kailunn's own scent, made by <a href="https://castledoor.com/">Castle Door</a></li>
+    </ul>
+  </div>
+</section>
+<div class="rule"></div>
+<section class="s" id="meet">
+  <h2>Come and find my table</h2>
+  <div class="table">
+    <div class="sub" style="margin:0">MEGACON LIVE Birmingham Winter, NEC, 5 and 6 December 2026</div>
+    <div class="big">Table CF5</div>
+    <p style="margin-top:.8rem;max-width:56ch">Signed copies, art prints and event merch. Every paperback I sell myself has the author exclusive matt cover.</p>
+  </div>
+  <ul class="later">
+    <li><span>25 April 2027</span><span>Fiction Fest UK, Bridgewater Hall, Manchester</span></li>
+    <li><span>8 May 2027</span><span>Readers and Rebels, ICC Wales, Newport</span></li>
+    <li><span>29 and 30 May 2027</span><span>HEA Fest, Aintree Racecourse, Liverpool</span></li>
+    <li><span>25 September 2027</span><span>Lost In Pages, Brighton Hilton Metropole</span></li>
+  </ul>
+  <p style="margin-top:2rem"><a href="https://instagram.com/ckandersson">Instagram</a> · <a href="https://www.tiktok.com/@ckandersson">TikTok</a> · <a href="https://www.patreon.com/cw/CKAndersson">Patreon, the Star Thistles</a></p>
+</section>
+</main>
+<footer>A mockup made by Sparsh Saini for C. K. Andersson. Not affiliated, not live.</footer>
+<script>
+(()=>{const hero=document.querySelector('.hero'),stage=document.querySelector('.stage'),book=document.getElementById('book'),copy=document.getElementById('copy');
+const moths=[...book.querySelectorAll('.moth')];const FX=.578,FY=.406;
+moths.forEach(m=>{m.style.left=m.dataset.x+'%';m.style.top=m.dataset.y+'%'});
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){book.style.setProperty('--bw','min(86vw,420px)');return}
+let W,H,bw,bh,rx,ry,S0,ht,ticking=false;
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,cl=v=>Math.max(0,Math.min(1,v));
+function measure(){W=innerWidth;H=stage.clientHeight;const desk=W>=900;
+ bw=desk?Math.min(H*.86/1.545,W*.4):Math.min(W*.8,(H*.5)/1.545);bh=bw*1.545;book.style.setProperty('--bw',bw+'px');
+ rx=desk?W*.72-bw/2:W/2-bw/2; ry=desk?H/2-bh/2:H*.05; S0=desk?5:6; ht=hero.offsetHeight-H; place(); draw()}
+function place(){}
+function draw(){ticking=false;const p=cl((scrollY-hero.offsetTop)/ht);const e=ease(cl(p/.78));
+ const s=S0+(1-S0)*e;
+ // at rest the fingertip sits at (rx+FX*bw, ry+FY*bh); at the start it sits at the screen centre
+ const fx=rx+FX*bw,fy=ry+FY*bh,cx=W/2,cy=H*.46;
+ const tx=(cx-fx)*(1-e)+rx,ty=(cy-fy)*(1-e)+ry;
+ book.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;
+ moths.forEach((m,i)=>{const d=+m.dataset.d;const k=d?ease(cl((p-.12-d*.06)/.6)):1;
+  const dx=(FX-m.dataset.x/100)*bw,dy=(FY-m.dataset.y/100)*bh;
+  const wob=Math.sin(k*Math.PI)*bw*.05*(d===1?1:-1),lift=Math.sin(k*Math.PI)*bh*.03;
+  const flap=d?1-.35*Math.abs(Math.sin(k*Math.PI*5)):1;
+  m.style.transform=`translate(${dx*(1-k)+wob}px,${dy*(1-k)-lift}px) scale(${flap},1)`;m.style.opacity=d?Math.min(1,k*6):1});
+ const c=cl((p-.7)/.22);copy.style.opacity=c;stage.style.setProperty('--sc',c);
+ copy.style.transform=(W>=900?'translateY(-50%) ':'')+`translateY(${(1-c)*18}px)`}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(draw)}},{passive:true});
+addEventListener('resize',measure);measure();
+})();
+</script>
+</body>
+</html>
